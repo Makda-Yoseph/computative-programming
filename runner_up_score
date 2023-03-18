@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    m = list(arr)
+    mx = max(m)
+    sc = None
+
+    for num in m:
+        if num == mx:
+            pass
+        elif sc == None:
+            sc = num
+        elif num > sc:
+            sc = num
+
+    print(sc)
