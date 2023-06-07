@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    students = []
+    scores = []
+    for _ in range(int(input())):
+        names = input()
+        score = float(input())
+        scores.append(score)
+        students.append([names,score])
+    scores = sorted(set(scores))
+    students = sorted(students)
+    secondlowest = scores[1]
+    for i in range(len(students)):
+        if students[i][1]==secondlowest:
+            print(students[i][0])
+    
+
+    
+    
