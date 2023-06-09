@@ -1,0 +1,15 @@
+def swap_case(s):
+    uh= ""
+    for i in s:
+        if i >= "a" and i<= "z":
+            uh += i.upper()
+        elif i >="A" and i <= "Z":
+            uh += i.lower()
+        else:
+           uh += i
+    return uh
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
