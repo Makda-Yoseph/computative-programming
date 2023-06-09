@@ -1,0 +1,20 @@
+if __name__ == '__main__':
+    N = int(input())
+    arr=[]
+    for i in range(N):
+        function= input().split()
+       
+        if function [0]== "insert":
+            arr.insert(int(function[1]),int(function[2]))
+        elif function[0]== "print":
+            print(arr)
+        elif function[0]== "remove":
+            arr.remove(int(function[1]))
+        elif function[0]== "append":
+            arr.append(int(function[1]))
+        elif function[0]== "sort":
+            arr.sort()  
+        elif function[0]== "pop":
+            arr.pop()
+        elif function[0]== "reverse":
+            arr.reverse()      
