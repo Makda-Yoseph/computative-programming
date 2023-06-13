@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a=int(input())
+n=input()
+lisn = n.split()
+nn=set(list(map(int,lisn)))
+b= int(input())
+m= input()
+lism=m.split()
+mm=set(list(map(int,lism)))
+nm =list((nn - mm) .union(mm-nn)) 
+
+nm= sorted(nm)
+for i in range(len(nm)):
+    print(nm[i])
+
